@@ -104,31 +104,6 @@ def extract_projects(text):
             project_info.append(line.strip())
 
     return project_info 
-
-
-# def extract_projects(text):
-#     project_keywords = [
-#         "projects", "worked on", "built", "developed", "designed", "created", 
-#         "implemented", "led", "deployed"
-#     ]
-#     lines = text.split('\n')
-#     project_info = []
-#     collect = False
-
-#     for line in lines:
-#         line_lower = line.lower().strip()
-
-#         if any(kw in line_lower for kw in project_keywords):
-#             collect = True
-
-#         if collect:
-#             if line.strip():
-#                 project_info.append(line.strip())
-#             else:
-#                 collect = False  # Stop when hitting a blank line
-
-#     return project_info
-
         
 def generate_report(name, emails, phones, skills, education, experience, projects):
     buffer = StringIO()
@@ -190,9 +165,9 @@ if uploaded_file is not None:
 
             report = generate_report(name, emails, phones, skills, education, experience, projects)
 
-            st.download_button("⬇️ Download Extracted Report (.pdf)",
+            st.download_button("⬇️ Download Extracted Report (.txt)",
                                data=report,
-                               file_name="resume_report.pdf",
+                               file_name="resume_report.txt",
                                mime="text/plain")
 
             with st.expander("📝 Full Resume Text"):
