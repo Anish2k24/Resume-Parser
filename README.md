@@ -1,6 +1,6 @@
 # AI Resume Parser
 
-An intelligent resume parser built using **Streamlit**, **spaCy NLP**, **Tesseract OCR**, and **PyPDF2** that extracts structured data from both text-based and image-based resumes. This project was developed as **Task 2 for the Pinnacle Labs Internship**.
+An intelligent resume parser built using **Streamlit**, **spaCy NLP**, **Tesseract OCR**, and **PyPDF2** that extracts structured data from both text-based and image-based resumes. This project was developed as **Task for the Pinnacle Labs Internship**.
 
 ---
 
